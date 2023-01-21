@@ -4,10 +4,10 @@ import uuid from './libs/uuid.js'
 
 export const options = {
     vus: 1,
-    duration: '60s',
+    duration: '1m',
     thresholds: {
         http_req_duration: ['p(95)<2000'], //95% das requisições devem responder em ate 2s.
-        http_req_failed: ['rate<0,01']  //1% das requisições podem ocorrer erros.
+        http_req_failed: ['rate<0.01']  //1% das requisições podem ocorrer erros.
     }
 }
 
